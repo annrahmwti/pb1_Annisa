@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Kondisi</title>
+  </head>
+  <body>
+    <h3>Belajar Kondisi</h3>
+    <div id="hasil">Arif Setiawan</div>
+
+    <br />
+    <label for="">Masukan data makanan</label>
+    <br />
+    <input type="text" id="makanan" placeholder="input data makanan" />
+
+    <button onclick="simpanMakan()">Simpan Makan</button>
+
+    <script>
+      let makanan = document.getElementById("makanan");
+      function simpanMakan() {
+        // get value (dari input text)
+
+        let output = "<ol>";
+        output += "<li>" + makanan.value + "</li>";
+        output += "</ol>";
+
+        document.getElementById("hasil").innerHTML = output;
+      }
+
+      let hasil = document.getElementById("hasil").innerHTML;
+
+      //   console.log(hasil);
+      let nama = "Arif Setiawan";
+
+      let contoh = ciEquals(hasil.toLowerCase, nama.toUpperCase);
+      console.log(contoh);
+      if (nama === hasil) {
+        console.log("benar 1");
+      }
+
+      if (nama == hasil) {
+        console.log("benar 2");
+      }
+
+      function ciEquals(a, b) {
+        return typeof a === "string" && typeof b === "string"
+          ? a.localeCompare(b, undefined, { sensitivity: "accent" }) === 0
+          : a === b;
+      }
+    </script>
+  </body>

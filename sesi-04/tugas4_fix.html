@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menghitung Luas dan Keliling Lingkaran</title>
+</head>
+<body>
+    <h1>Menghitung Luas dan Keliling Lingkaran</h1>
+
+    <h2>1. Menghitung Luas dan Keliling Lingkaran</h2>
+    <p>Tugas: Menghitung luas dan keliling lingkaran.</p>
+
+    <h2>2. Input yang Diperlukan</h2>
+    <p>Nilai jari-jari (r) = 14</p>
+    <p>Nilai Pi (π) = 3.14</p>
+
+    <h2>3. Perhitungan</h2>
+    <p>let luas = p1 * r * r</p>
+    <p>let keliling = 2 * p1 * r</p>
+    <script>
+
+        let r = 14;
+        let p1 = 3.14;
+
+        let luas = p1 * r * r;
+        let keliling = 2 * p1 * r;
+    </script>
+
+
+    <h2>4. Hasil Perhitungan</h2>
+    <div id="hasil-luas"></div>
+    <div id="hasil-keliling"></div>
+
+    <script>
+        console.log("Luas Lingkaran: " + luas.toFixed(2));
+        console.log("Keliling Lingkaran: " + keliling.toFixed(2));
+        document.getElementById('hasil-luas').innerText = "Luas Lingkaran: " + luas.toFixed(2);
+        document.getElementById('hasil-keliling').innerText = "Keliling Lingkaran: " + keliling.toFixed(2);
+    </script>
+</body>
+</html>

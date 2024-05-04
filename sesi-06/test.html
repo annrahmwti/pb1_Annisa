@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Mandiri 6</title>
+</head>
+
+<body>
+
+    <p id="paragraf1" class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p id="paragraf2" class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p id="paragraf3" class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+
+    <script>
+        var paragraf1 = document.getElementById('paragraf1');
+        var paragraf2 = document.getElementById('paragraf2');
+        var paragraf3 = document.getElementById('paragraf3');
+
+        function changeTextColor(element, color) {
+            element.style.color = color; // Set warna teks
+        }
+
+        setTimeout(function() {
+            changeTextColor(paragraf1, 'red');
+        }, 1000);
+
+        setTimeout(function() {
+            changeTextColor(paragraf2, 'green');
+        }, 1000);
+
+        setTimeout(function() {
+            changeTextColor(paragraf3, 'blue');
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
+

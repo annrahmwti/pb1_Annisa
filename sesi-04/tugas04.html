@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perhitungan Luas dan Keliling Lingkaran</title>
+<script>
+    function hitung() {
+        // Langkah 3a: Input jari-jari
+        var jariJari = parseFloat(document.getElementById('jari-jari').value);
+        
+        // Langkah 3b: Hitung luas lingkaran
+        var luas = Math.PI * Math.pow(jariJari, 2);
+        
+        // Langkah 3c: Hitung keliling lingkaran
+        var keliling = 2 * Math.PI * jariJari;
+        
+        // Tampilkan hasil
+        document.getElementById('hasil-luas').innerText = "Luas Lingkaran: " + luas.toFixed(2);
+        document.getElementById('hasil-keliling').innerText = "Keliling Lingkaran: " + keliling.toFixed(2);
+    }
+</script>
+</head>
+<body>
+    <h1>Perhitungan Luas dan Keliling Lingkaran</h1>
+    <label for="jari-jari">Masukkan jari-jari lingkaran:</label>
+    <input type="number" id="jari-jari">
+    <button onclick="hitung()">Hitung</button>
+    <div id="hasil-luas"></div>
+    <div id="hasil-keliling"></div>
+</body>
+</html>
